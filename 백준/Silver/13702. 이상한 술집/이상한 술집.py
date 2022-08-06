@@ -6,8 +6,10 @@ arr = []
 for _ in range(n):
     m = int(input())
     arr.append(m)
-left, right = 1, max(arr)
+arr.sort()
+left, right = 1, arr[-1]
 answer = 0
+
 while left <= right:
     cnt = 0
     mid = (left+right)//2
