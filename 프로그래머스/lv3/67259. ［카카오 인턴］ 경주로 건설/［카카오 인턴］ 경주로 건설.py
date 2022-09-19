@@ -4,7 +4,7 @@ def dfs(x,y,dir,res):
     value = 100
     if x==r-1 and y==c-1:
         # for i in visited:
-        #     print(*i)
+            # print(*i)
         # print()
         # print("ans",answer)
         answer = min(answer,res)
