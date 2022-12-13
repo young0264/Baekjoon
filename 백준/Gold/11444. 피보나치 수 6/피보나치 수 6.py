@@ -1,10 +1,7 @@
 #60
-import sys
-sys.setrecursionlimit(10*6)
 n = int(input())
 mod = 1000000007
 dp = dict()
-input = sys.stdin.readline
 def dfs(num):
     if dp.get(num):
         return dp[num]
