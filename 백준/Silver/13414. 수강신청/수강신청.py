@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 k, l = map(int,input().split())
 dic = {}
 arr = []
@@ -9,7 +12,7 @@ for i in range(l):
 for s in arr:
     if dic[s] == 1:
         k-=1
-        print(s)
+        print(s.rstrip())
         if k==0:
             break
     else:
